@@ -1,0 +1,25 @@
+Desenvolva um programa que leia o
+comprimento de três retas e diga ao usuário se
+elas podem formar um triângulo e mostrar que tipo de triângulo
+será formado:
+- Equilátero: todos os lados iguais.
+- Isósceles: dois lados iguais.
+- Escaleno: todos os lados diferentes.
+
+
+r1 = float(input('digite o comprimento1:  '))
+r2 = float(input('Digite o comprimento2:  '))
+r3 = float(input('Digite o comprimento3:  '))
+
+if r3 < r1 + r2 and r2 < r3 + r1 and r1 < r3 + r2:
+    print('pode formar um triangulo ')
+    if r1 == r2 == r3:
+        print(' Forma um triângulo \033[33m Equilátero \033[m')
+    elif r1 == r2 or r1 == r3 or r2 == r3:
+        print('Forma um triângulo \033[32m Isósceles \033[m ')
+    else:
+        print('Forma um triângulo \033[34m Escaleno \033[m ')
+
+else:
+    print('não pode formar um triangulo ')
+
