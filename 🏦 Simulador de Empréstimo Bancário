@@ -1,0 +1,20 @@
+"""
+Escreva um programa para aprovar o empréstimo bancário para a
+compra de uma casa. o programa  vai perguntar o valor da casa,
+o salário do comprador e em quantos anos ele vai pagar
+
+calcule o valor da prestação sabendo que ela não pode exceder 30%
+do salário ou então o empréstimo será negado
+"""
+print(' \033[36m ========================= BANCO LUENA ================================ \033[m ')
+print('\033[34m Emprestimo Bancário: \033[m ')
+valor = float(input('  \033[35m 1º - Digite o valor da casa (Kz): \033[m   '))
+salario = float(input('\033[35m 2º - Digite o seu salário (Kz): \033[m   '))
+ano = int(input('\033[35m 3º - Quantos anos pretende pagar a casa: \033[m '))
+
+prestacao = valor/ (ano*12)
+minimo = salario * (30/100)
+if prestacao <= minimo:
+    print('\033[32m Caro cliente o seu empréstrimo foi aprovado e será processado na sua conta em três dias ')
+else:
+    print('\033[31m Estimado cliente o seu emprestimos não foi aprovado, pois excede 30% do seu salário ')
