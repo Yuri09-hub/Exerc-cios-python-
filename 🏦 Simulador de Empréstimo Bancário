@@ -1,11 +1,4 @@
-"""
-Escreva um programa para aprovar o empréstimo bancário para a
-compra de uma casa. o programa  vai perguntar o valor da casa,
-o salário do comprador e em quantos anos ele vai pagar
 
-calcule o valor da prestação sabendo que ela não pode exceder 30%
-do salário ou então o empréstimo será negado
-"""
 print(' \033[36m ========================= BANCO LUENA ================================ \033[m ')
 print('\033[34m Emprestimo Bancário: \033[m ')
 valor = float(input('  \033[35m 1º - Digite o valor da casa (Kz): \033[m   '))
